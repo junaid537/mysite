@@ -173,7 +173,7 @@ button {
   max-width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
+  /* border-radius: 2.4em; */
   padding: 0.5em 1.2em;
   font-family: var(--body-font-family);
   font-style: normal;
@@ -181,8 +181,8 @@ button {
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
+  background-color: rgb(243, 243, 16);
+  color: black;
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -251,7 +251,17 @@ main > .section:first-of-type {
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: var(--light-color);
+  /* background-color: var(--light-color); */
   margin: 0;
   padding: 40px 0;
 }
+h1::after, h2::after, h3::after, h4::after, h5::after, h6::after  {
+    border-bottom: 2px solid var(--brandPrimary, #FFEA00);
+    content: "";
+    display: block;
+    padding-top: 8px;
+    width: 84px;
+}
+
+
+
