@@ -17,7 +17,7 @@
   --dark-color: #505050;
   --text-color: #131313;
   --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  /* --link-hover-color: #1d3ecf; */
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -105,9 +105,11 @@ h4,
 h5,
 h6 {
   margin-top: 0.8em;
-  margin-bottom: 0.25em;
-  font-family: var(--heading-font-family);
-  font-weight: 600;
+  margin-bottom: 1.25em;
+  /* font-family: var(--heading-font-family); */
+  font-family: var(--fontFamilySerif, "Asar", Georgia, "Times New Roman", Times, serif);
+  font-weight: var(--fontWeightNormal, normal);
+  /* font-weight: 600; */
   line-height: 1.25;
   scroll-margin: 40px;
 }
@@ -193,7 +195,7 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
+  /* background-color: var(--link-hover-color); */
   cursor: pointer;
 }
 
