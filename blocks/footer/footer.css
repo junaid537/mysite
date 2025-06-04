@@ -1,81 +1,79 @@
 footer {
-  background-color: #1c1c1c;
-  color: white;
-  font-size: 14px;
-  line-height: 1.6;
-  font-family: Arial, sans-serif;
+  background-color: #202020;
+  color: #ebebeb;
+  padding: 1rem 0 1.5rem;
+  margin-top: 3rem;
 }
-footer img{
-  height:48px;
-  width:120px;
-  display:inline;
-}
-footer p{
-  display: inline;;
-}
+
 footer .footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 24px 24px;
+  
 }
 
-footer .footer > div {
-  flex: 1 1 60%;
-  min-width: 300px;
+
+.footer > div {
+  
+  display: grid;
+  grid-template-columns: auto 50% auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+          "brand nav follow"
+          "disc disc disc";
 }
 
-footer .footer .footer-right {
-  flex: 1 1 35%;
-  min-width: 200px;
+
+/* Assign areas */
+/* Assign grid areas using nth-child */
+footer .section:nth-child(1) {
+  grid-area: brand;
+}
+
+footer .section:nth-child(2) {
+  grid-area: nav;
+  padding-left: 40px;
+}
+
+footer .section:nth-child(3) {
+  grid-area: follow;
   text-align: right;
 }
 
-footer .footer h2,
-footer .footer h3 {
-  font-size: 36px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin: 0 0 10px 0;
+footer .section:nth-child(4) {
+  grid-area: disc;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding-inline-start: 0;
+  
+}
+
+footer li {
+  display: block;
+  float: left;
+  color: #202020;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 15px 17px;
+  text-decoration: none;
+}
+
+.footer a {
+  color: white;
 }
 
 footer .footer p {
-  margin: 10px 0;
-}
-
-footer ul {
-  list-style-type: none;
-  padding: 0;
   margin: 0;
+  font-size: var(--body-font-size-xs);
+  line-height: 1.25;
+}
+footer .footer img{
+  height:48px;
+  width:120px;
 }
 
-footer ul li {
-  margin: 10px 0;
+footer p{
+  padding-top:15px;
 }
-
-footer ul {
-  color: red;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-  display:flex;
-  justify-content:center
-}
-
-
-
-@media (max-width: 900px) {
-  footer .footer {
-    flex-direction: column;
-    text-align: left;
-  }
-
-  footer .footer .footer-right {
-    text-align: left;
-    margin-top: 24px;
-  }
-} 
-
-

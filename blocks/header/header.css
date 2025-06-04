@@ -1,3 +1,4 @@
+
 /* header and nav layout */
 header .nav-wrapper {
   background-color: var(--background-color);
@@ -19,6 +20,7 @@ header nav {
   height: var(--nav-height);
   padding: 0 24px;
   font-family: var(--body-font-family);
+  
 }
 
 header nav[aria-expanded='true'] {
@@ -47,7 +49,7 @@ header nav[aria-expanded='true'] {
 
 header nav p {
   margin: 0;
-  line-height: 1;
+  line-height: 4;
 }
 
 header nav a:any-link {
@@ -220,6 +222,7 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections ul {
     display: flex;
+    justify-content:flex-end;
     gap: 24px;
     margin: 0;
   }
@@ -265,4 +268,17 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+header{
+  
+  margin-bottom: 100px;
+}
+
+header h1::after {
+    border-bottom: 0px solid var(--brandPrimary, white);
+    content: "";
+    display: block;
+    padding-top: 8px;
+    width: 84px; 
 }

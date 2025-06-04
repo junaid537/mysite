@@ -1,11 +1,14 @@
+
 .columns > div {
   display: flex;
   flex-direction: column;
-   background-color: var(--light-color);
+  background-color: var(--light-color);
+   
 }
 
 .columns img {
-  width: 100%;
+  width: 588px;
+  height:380px;
 }
 
 .columns > div > div {
