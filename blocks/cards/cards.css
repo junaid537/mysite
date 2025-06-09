@@ -51,11 +51,11 @@
 }
 
 .cards .cards-card-body h3,
-.cards .cards-card-body .card-title {
+.cards .cards-card-body .card-title, .cards .cards-card-body h6 {
   margin: 0 0 4px 0;
   color: var(--textColor, #202020);
   font-family: var(--fontFamilySansSerif, "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif);
-  font-size: var(--fontSizeMedium, 18px);
+  /* font-size: var(--fontSizeMedium, 18px); */
   font-weight: var(--fontWeightBold, 600);
   text-transform: uppercase;
   line-height: 1.2;
@@ -63,4 +63,9 @@
 }
 
 
-
+body.route-about .cards-card-image img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
