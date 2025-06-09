@@ -257,13 +257,13 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
-/* h1::after, h2::after, h4::after, h5::after  {
+h1::after, h2::after, h4::after, h5::after  {
     border-bottom: 2px solid var(--brandPrimary, #FFEA00);
     content: "";
     display: block;
     padding-top: 8px;
     width: 84px;
-} */
+}
 
 
 

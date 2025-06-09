@@ -195,7 +195,7 @@ function applyCircularCardImages() {
     });
 
   } else {
-    setTimeout(applyCircularCardImages, 100);
+    setTimeout(applyCircularCardImages, 500);
   }
 }
 
