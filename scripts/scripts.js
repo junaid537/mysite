@@ -128,38 +128,7 @@ async function loadPage() {
 
 loadPage();
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   if (window.location.pathname === '/about') {
-//     setTimeout(() => {
-//       const images = document.querySelectorAll('.cards-card-image img');
-//       images.forEach((img) => {
-//         img.style.setProperty('border-radius', '50%', 'important');
-//         img.style.setProperty('object-fit', 'cover', 'important');
-//         img.style.setProperty('width', '200px', 'important');
-//         img.style.setProperty('height', '200px', 'important');
-//       });
-//     }, 300); // delay in ms — adjust if needed
-//   }
-// });
-// function applyCircularCardImages() {
-//   const images = document.querySelectorAll('.cards-card-image img');
-//   if (images.length > 0) {
-//     images.forEach((img) => {
-//       img.style.setProperty('border-radius', '50%', 'important');
-//       img.style.setProperty('object-fit', 'cover', 'important');
-//       img.style.setProperty('width', '200px', 'important');
-//       img.style.setProperty('height', '200px', 'important');
-//     });
-//   } else {
-//     setTimeout(applyCircularCardImages, 100); // check again in 100ms
-//   }
-// }
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   if (window.location.pathname === '/about') {
-//     applyCircularCardImages();
-//   }
-// });
 function toTitleCase(str) {
   return str
     .toLowerCase()
@@ -204,68 +173,6 @@ document.addEventListener('DOMContentLoaded', () => {
     applyCircularCardImages();
   }
 });
-
-// const tryInsertSearchBox = () => {
-//   const searchIconSpan = document.querySelector(
-//     'header .section.nav-tools .default-content-wrapper .icon-search'
-//   );
-
-//   if (searchIconSpan) {
-//     const input = document.createElement('input');
-//     input.type = 'text';
-//     input.placeholder = 'Search...';
-//     input.style.marginLeft = '10px';
-//     input.style.padding = '5px';
-//     input.style.borderRadius = '4px';
-//     input.style.border = '1px solid #ccc';
-//     input.style.fontSize = '14px';
-
-//     console.log("✅ Search icon found and input created");
-
-//     searchIconSpan.parentNode.insertBefore(input, searchIconSpan.nextSibling);
-//     clearInterval(intervalId); // stop checking once it's done
-//   } else {
-//     console.log("⏳ Still waiting for search icon...");
-//   }
-// };
-
-// // Retry every 200ms until element is found
-// const intervalId = setInterval(tryInsertSearchBox, 200);
-//******************************************************** 
-// const tryInsertSearchBox = () => {
-//   const searchIconSpan = document.querySelector(
-//     'header .section.nav-tools .default-content-wrapper .icon-search'
-//   );
-
-//   if (searchIconSpan) {
-//     const input = document.createElement('input');
-//     input.type = 'text';
-//     input.placeholder = 'Search...';
-
-//     // 🔧 Refined styling
-//     input.style.marginLeft = '8px';
-//     input.style.padding = '4px 8px';         // Less padding for tighter look
-//     input.style.height = '28px';             // Adjust height to match nav size
-//     input.style.borderRadius = '4px';
-//     input.style.border = '1px solid #ccc';
-//     input.style.fontSize = '14px';
-//     input.style.lineHeight = '1';            // Prevent extra vertical space
-//     input.style.verticalAlign = 'middle';    // Align with icon
-//     input.style.boxSizing = 'border-box';
-
-//     console.log("✅ Search icon found and input created");
-
-//     searchIconSpan.parentNode.insertBefore(input, searchIconSpan.nextSibling);
-//     clearInterval(intervalId);
-//   } else {
-//     console.log("⏳ Still waiting for search icon...");
-//   }
-// };
-
-// // Keep trying every 200ms
-// const intervalId = setInterval(tryInsertSearchBox, 200);
-
-
 
 
 
